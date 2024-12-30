@@ -1,0 +1,1 @@
+export const dataLocation = 'raw.githubusercontent.com/VidadiAli/school-groups-data'
