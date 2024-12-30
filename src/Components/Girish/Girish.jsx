@@ -23,7 +23,7 @@ const Girish = () => {
 
         data.forEach((e) => {
             if (e.userName === document.getElementsByTagName('input')[0].value) {
-                navigate(`/${e.group}-${e.userName}`)
+                navigate(`/school-groups/${e.group}-${e.userName}`)
             }
         });
     }
