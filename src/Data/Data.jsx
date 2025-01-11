@@ -1,2 +1,3 @@
 import { dataLocation } from "../assets/ashg";
-export const myData = `https://${dataLocation}/main/Data.json`
+const myGit = "githubusercontent", myRaw = "raw"
+export const myData = `https://${myRaw}.${myGit}${dataLocation.slice(6, dataLocation.length)}/main/Data.json`
