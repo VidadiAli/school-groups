@@ -55,12 +55,34 @@ const User = () => {
                                                     <span>Toplam</span>
                                                     <span>{Number(f.point1) + Number(f.point2)}</span>
                                                 </div>
+                                                {
+                                                    (f.done === "y") ?
+                                                        < div >
+                                                            <span >Qiymət</span>
+                                                            <span
+                                                                style={{
+                                                                    backgroundColor: (Number(f.point1) + Number(f.point2)) <= 50 ?
+                                                                        "rgb(255, 0, 0)" : "rgb(2, 91, 187)",
+                                                                    color: 'white'
+                                                                }}>
+                                                                {
+                                                                    (Number(f.point1) + Number(f.point2)) >= 91 ? "A"
+                                                                        : (Number(f.point1) + Number(f.point2)) >= 81 ? "B"
+                                                                            : (Number(f.point1) + Number(f.point2)) >= 71 ? "C"
+                                                                                : (Number(f.point1) + Number(f.point2)) >= 61 ? "D"
+                                                                                    : (Number(f.point1) + Number(f.point2)) >= 51 ? "E"
+                                                                                        : "F"
+                                                                }
+                                                            </span>
+                                                        </div> :
+                                                        <></>
+                                                }
                                             </div>
                                         </div>
                                     })
                                 }
                             </div>
-                        </div>
+                        </div >
                     }
                 })
             }
