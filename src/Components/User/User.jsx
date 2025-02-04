@@ -19,6 +19,11 @@ const User = () => {
         else if (user.slice(0, 2) == '57') {
             data = mainData.group57
         }
+        
+        else if (user.slice(0, 2) == '54') {
+            data = mainData.group54
+        }
+        
         setData(data)
     }
 
